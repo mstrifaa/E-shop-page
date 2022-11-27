@@ -22,12 +22,14 @@ const navbarStyle = {
     display: "flex",
     justifyContent: "center",
     flexWrap: "wrap", //must have it for responsive design
-    backgroundColor: 'green',
+    backgroundColor: 'rgb(238, 238, 233)',
     height: 'max-content',
+    // borderRadius: '5px'
 }
 
 const category={
     display:'inline',
     padding: '10px',
-    textDecoration: 'underline'
+    textDecoration: 'underline',
+    fontFamily: 'Monaco, monospace'
 }

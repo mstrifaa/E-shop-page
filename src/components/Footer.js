@@ -1,7 +1,9 @@
 import React from "react";
-import { FaFacebookF, FaPinterestP, FaTwitter, FaCcVisa } from "react-icons/fa";
+import { FaFacebookF, FaPinterestP, FaTwitter, FaCcVisa, FaCcMastercard, FaCcAmazonPay, FaCcApplePay, FaCcPaypal, FaCcStripe } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { ImYoutube } from "react-icons/im";
+
+import COD from "../images/icons8-cash-on-delivery-16.png";
 
 import logo from "../images/adobe-illustrator-cc-logo-C1DC5A6D09-seeklogo.com.png";
 
@@ -10,9 +12,9 @@ import logo from "../images/adobe-illustrator-cc-logo-C1DC5A6D09-seeklogo.com.pn
 export default function Footer(){
 
     return (
-        <footer style={{backgroundColor: 'pink'}}>
+        <footer>
             <div id="footer-container-big">
-                <div className="footer-item" id="social-media" style={{backgroundColor: 'red'}}>
+                <div className="footer-item" id="social-media">
                     {/* social media icons */}
                     {/* Change links */}
                     {/* image should be prettier - width */}
@@ -26,7 +28,7 @@ export default function Footer(){
 
                 </div>
 
-                <div className="footer-item" id="footer-customers" style={{backgroundColor: 'black'}}>
+                <div className="footer-item" id="footer-customers" >
 
                     <p>CUSTOMERS</p>
                     <ul>
@@ -37,7 +39,7 @@ export default function Footer(){
 
                 </div>
 
-                <div className="footer-item" id="legal-info" style={{backgroundColor: 'green'}}>
+                <div className="footer-item" id="legal-info" >
 
                     <p>LEGAL INFO</p>
                     <ul>
@@ -46,7 +48,7 @@ export default function Footer(){
                         <li><a href="#">Imprint</a></li>
                     </ul>
                 </div>
-                <div className="footer-item" id="company" style={{backgroundColor: 'blueviolet'}}>
+                <div className="footer-item" id="company" >
 
                     <p>COMPANY</p>
                     <ul>
@@ -56,13 +58,15 @@ export default function Footer(){
                         <li><a href="/">Contacts</a></li>
                     </ul>
                 </div>
-                <div className="footer-item" id="payment-icons" style={{backgroundColor: 'indigo'}}>
+                <div className="footer-item" id="payment-icons" >
+                    <p>PAYMENT OPTIONS: </p>
                     <span> <FaCcVisa/> </span>
-                    <span href="www.twitter.com/..."> <FaTwitter /></span>
-                    <span href="www.facebook.com/..."> <FaFacebookF /></span>
-                    <span href="www.instagram.com/..."> <FiInstagram /></span>
-                    <span href="www.pinterest.com/..."> <FaPinterestP /> </span>
-                    <span href="www.youtube.com/..."> <ImYoutube /> </span>
+                    <span > <FaCcMastercard /></span>
+                    <span > <FaCcAmazonPay /></span>
+                    <span > <FaCcApplePay /></span>
+                    <span > <FaCcPaypal /> </span>
+                    <span > <FaCcStripe /> </span>
+                    <span> <img src={COD} /></span>
                 </div>
             </div>
             
@@ -73,12 +77,13 @@ export default function Footer(){
                     <div style={{backgroundColor: 'white', padding: '16px 20px', borderRadius:'0.375rem'}}>
                     {/* social media icons */}
                     {/* Change links */}
-                        <span style={{marginRight: '1rem'}}>Follow us on social media: </span>
+                        <p style={{marginRight: '1rem'}}>Follow us on social media: </p>
                         <a href="www.twitter.com/..." title="Twitter"> <FaTwitter /></a>
                         <a href="www.facebook.com/..." title="Facebook"> <FaFacebookF /></a>
                         <a href="www.instagram.com/..." title="Instagram"> <FiInstagram /></a>
                         <a href="www.pinterest.com/..." title="Pinterest"> <FaPinterestP /> </a>
                         <a href="www.youtube.com/..." title="Youtube"> <ImYoutube /> </a>
+                        
                     </div>
                 </div>
 
@@ -144,13 +149,14 @@ export default function Footer(){
                     <div style={{backgroundColor: 'white', padding: '16px 20px', borderRadius:'0.375rem'}}>
                     {/* social media icons */}
                     {/* Change links */}
-                        <span style={{marginRight: '1rem'}}>PAYMENT OPTIONS: </span>
+                        <p style={{marginRight: '1rem'}}>PAYMENT OPTIONS: </p>
                         <span> <FaCcVisa/> </span>
-                        <span> <FaTwitter /></span>
-                        <span> <FaFacebookF /></span>
-                        <span> <FiInstagram /></span>
-                        <span> <FaPinterestP /> </span>
-                        <span> <ImYoutube /> </span>
+                        <span > <FaCcMastercard /></span>
+                        <span > <FaCcAmazonPay /></span>
+                        <span > <FaCcApplePay /></span>
+                        <span > <FaCcPaypal /> </span>
+                        <span > <FaCcStripe /> </span>
+                        <span> <img src={COD} /></span>
                         {/* cash on delivery, bkash, nogod and rocket must be included */}
                     </div>
                 </div>

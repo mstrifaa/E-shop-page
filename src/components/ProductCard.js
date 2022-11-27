@@ -1,5 +1,5 @@
 import React from "react";
-
+import img from "../images/product.jpg"
 export default function ProductCard({product}){
 
     return (
@@ -9,8 +9,9 @@ export default function ProductCard({product}){
                 <a href='/'>
                     <div className="product-photo" >
                         {/* complete this section */}
+                        <img className="product-image" src={img}/>
                     </div>
-                    <p className="product-description"> {product.name}</p>
+                    <p className="product-title"> {product.name}</p>
                     <p className="product-price">${product.price}</p>
                 </a>
             </div>
