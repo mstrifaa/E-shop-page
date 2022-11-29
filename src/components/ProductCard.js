@@ -9,7 +9,7 @@ export default function ProductCard({product}){
                 <a href='/'>
                     <div className="product-photo" >
                         {/* complete this section */}
-                        <img className="product-image" src={img}/>
+                        <img className="product-image" src={img} alt="image of product" />
                     </div>
                     <p className="product-title"> {product.name}</p>
                     <p className="product-price">${product.price}</p>

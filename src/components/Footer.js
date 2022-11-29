@@ -32,9 +32,9 @@ export default function Footer(){
 
                     <p>CUSTOMERS</p>
                     <ul>
-                        <li><a href="#">Shipping Info</a></li>
-                        <li><a href="#">Return Policy</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="/">Shipping Info</a></li>
+                        <li><a href="/">Return Policy</a></li>
+                        <li><a href="/">FAQs</a></li>
                     </ul>
 
                 </div>
@@ -43,9 +43,9 @@ export default function Footer(){
 
                     <p>LEGAL INFO</p>
                     <ul>
-                        <li><a href="#">Privacy and Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                        <li><a href="#">Imprint</a></li>
+                        <li><a href="/">Privacy and Policy</a></li>
+                        <li><a href="/">Terms and Conditions</a></li>
+                        <li><a href="/">Imprint</a></li>
                     </ul>
                 </div>
                 <div className="footer-item" id="company" >
@@ -58,7 +58,7 @@ export default function Footer(){
                         <li><a href="/">Contacts</a></li>
                     </ul>
                 </div>
-                <div className="footer-item" id="payment-icons" >
+                <div className="footer-item payment-icons" >
                     <p>PAYMENT OPTIONS: </p>
                     <span> <FaCcVisa/> </span>
                     <span > <FaCcMastercard /></span>
@@ -66,7 +66,7 @@ export default function Footer(){
                     <span > <FaCcApplePay /></span>
                     <span > <FaCcPaypal /> </span>
                     <span > <FaCcStripe /> </span>
-                    <span> <img src={COD} /></span>
+                    <span> <img src={COD} alt="image of cash-on-delivery logo" /></span>
                 </div>
             </div>
             
@@ -97,9 +97,9 @@ export default function Footer(){
                         <div id="collapse1" className="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordion1">
                             <div className="accordion-body">
                                 <ul>
-                                    <li><a href="#">Shipping Info</a></li>
-                                    <li><a href="#">Return Policy</a></li>
-                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="/">Shipping Info</a></li>
+                                    <li><a href="/">Return Policy</a></li>
+                                    <li><a href="/">FAQs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -116,9 +116,9 @@ export default function Footer(){
                         <div id="collapse2" className="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordion2">
                             <div className="accordion-body">
                                 <ul>
-                                    <li><a href="#">Privacy and Policy</a></li>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                    <li><a href="#">Imprint</a></li>
+                                    <li><a href="/">Privacy and Policy</a></li>
+                                    <li><a href="/">Terms and Conditions</a></li>
+                                    <li><a href="/">Imprint</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -145,10 +145,8 @@ export default function Footer(){
                     </div>
                 </div>
 
-                <div className="footer-item">
+                <div className="footer-item payment-icons">
                     <div style={{backgroundColor: 'white', padding: '16px 20px', borderRadius:'0.375rem'}}>
-                    {/* social media icons */}
-                    {/* Change links */}
                         <p style={{marginRight: '1rem'}}>PAYMENT OPTIONS: </p>
                         <span> <FaCcVisa/> </span>
                         <span > <FaCcMastercard /></span>
@@ -156,8 +154,8 @@ export default function Footer(){
                         <span > <FaCcApplePay /></span>
                         <span > <FaCcPaypal /> </span>
                         <span > <FaCcStripe /> </span>
-                        <span> <img src={COD} /></span>
-                        {/* cash on delivery, bkash, nogod and rocket must be included */}
+                        <span> <img src={COD} alt="logo of cash-on-delivery" /></span>
+                        {/* better icon for cash on delivery, bkash, nogod and rocket must be included */}
                     </div>
                 </div>
             </div>

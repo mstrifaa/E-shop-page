@@ -15,9 +15,9 @@ export default function Header(props){
                     <a href="/"><img id="brand-logo" style={logoStyle} src={logo} alt="logo"/> </a>
                 </div>
                 <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                    <a href='#' className="links-to-others"> Blog </a>
-                    <a href="#" className="links-to-others"> Youtube </a>
-                    <a href="#" className="links-to-others"> Guides </a>
+                    <a href='/' className="links-to-others"> Blog </a>
+                    <a href="/" className="links-to-others"> Youtube </a>
+                    <a href="/" className="links-to-others"> Guides </a>
                     {/* other links 
                     TODO: for future */}
                 </div>
@@ -46,9 +46,9 @@ export default function Header(props){
                  <a href="/" style={{padding: '1rem 1.8rem'}} title="See your cart!"> <span className="material-icons md-48">shopping_cart</span> </a>
                </div>
                <div style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'column'}}>
-                    <a href='#' className="links-to-others"> Blog </a>
-                    <a href="#" className="links-to-others"> Youtube </a>
-                    <a href="#" className="links-to-others"> Guides </a>
+                    <a href='/' className="links-to-others"> Blog </a>
+                    <a href="/" className="links-to-others"> Youtube </a>
+                    <a href="/" className="links-to-others"> Guides </a>
                     {/* other links 
                     TODO: for future */}
                 </div>
@@ -79,7 +79,8 @@ let onKeyUp = function(event){
 let showMenuSmall = function(e){
     const menu = document.querySelector("#menu-small");
     menu.style.width = '15rem'; //setting inline css, must set a numeric value for transition  to take effect
-    // document.body.style.backgroundColor = "rgba(0,0,0,0.2)" 
+    //     document.querySelector("#root").style.backgroundColor = "rgba(0,0,0,0.2)" ;
+//     document.querySelector("#root").style.zIndex = 10;
 }
 let searchStore = function(event){
     event.preventDefault()
@@ -98,7 +99,7 @@ const rightPart={
 }
 
 const logoStyle={
-    height: '4rem',
+    height: '3rem',
     // margin: '2px'
 }
 
