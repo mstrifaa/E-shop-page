@@ -66,7 +66,7 @@ export default function Footer(){
                     <span > <FaCcApplePay /></span>
                     <span > <FaCcPaypal /> </span>
                     <span > <FaCcStripe /> </span>
-                    <span> <img src={COD} alt="image of cash-on-delivery logo" /></span>
+                    <span> <img src={COD} alt="logo of cash-on-delivery" /></span>
                 </div>
             </div>
             
